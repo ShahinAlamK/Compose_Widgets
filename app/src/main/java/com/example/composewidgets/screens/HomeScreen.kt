@@ -63,7 +63,6 @@ fun HomeScreen() {
                     val sourse = ImageDecoder.createSource(context.contentResolver,it)
                     bitMap.value = ImageDecoder.decodeBitmap(sourse)
                 }
-
                 bitMap.value?.let {image->
                     Image(bitmap = image.asImageBitmap(), contentDescription = "")
                 }
